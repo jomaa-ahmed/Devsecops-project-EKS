@@ -101,5 +101,41 @@ A Kubernetes token was generated and configured in Jenkins. This token allows Je
 
 ---
 
+## Pipeline Execution in Jenkins
 
+A CI/CD pipeline was configured and executed in Jenkins. The pipeline integrates multiple stages such as build, test, security scans, and deployment to Kubernetes.
+
+![Pipeline Execution in Jenkins](images/14-done-pipeline.png)
+
+---
+
+## EKS Endpoint Overview
+
+The Amazon EKS cluster's endpoint was verified to ensure proper connectivity and configuration.
+
+![EKS Endpoint Overview](images/14-eks-endpoint.png)
+
+---
+
+## Pushing Images to Docker Hub
+
+Containerized application images were successfully built and pushed to Docker Hub using the CI/CD pipeline.
+
+![Pushing Images to Docker Hub](images/14-publish-to-docker-hub.png)
+
+---
+
+## Deploying to Kubernetes Load Balancer
+
+The application was deployed to the Kubernetes cluster using a LoadBalancer service, enabling external access to the application.
+
+![Deploying to Kubernetes Load Balancer](images/15-DOne-deploy-k8-lb.png)
+
+---
+
+## Testing the Deployed Application
+
+The deployed application was tested successfully, and the login page was rendered correctly.
+
+![Testing the Deployed Application](images/16-test-website.png)
 
