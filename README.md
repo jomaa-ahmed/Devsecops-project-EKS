@@ -63,4 +63,6 @@ The final infrastructure was provisioned using the `terraform apply` command. Th
 
 The final infrastructure was provisioned using the `terraform apply` command. The process successfully created the VPC, subnets, and EKS node groups, completing the cluster setup.
 
+
 ![Terraform Execution for EKS](9-terraform-eks.png)
+
