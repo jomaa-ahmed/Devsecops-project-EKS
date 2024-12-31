@@ -150,7 +150,7 @@ A custom domain was configured using Hostinger to map the application's external
 ![Adding DNS Record](images/22-add-dns-record-CNAME.png)
 ![Hostinger DNS Management](images/23-hostinger.png)
 ![DNS Propagation Check](images/24-DNS-CHECKED.png)
-![Website Working](images/25-dns-done.png.png)
+![Website Working](images/25-dns-done.png)
 
 ---
 
