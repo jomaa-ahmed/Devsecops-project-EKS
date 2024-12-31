@@ -132,10 +132,29 @@ The application was deployed to the Kubernetes cluster using a LoadBalancer serv
 ![Deploying to Kubernetes Load Balancer](images/15-DOne-deploy-k8-lb.png)
 
 ---
+## Application Deployment and Testing
 
-## Testing the Deployed Application
+The deployed application was accessed and tested on the configured EKS cluster. Below are some screenshots of the application in action:
 
-The deployed application was tested successfully, and the login page was rendered correctly.
+![Application Login Page](images/16-test-website.png)
+![Application Dashboard](images/19-deposit-money.png)
+![Money Transfer](images/20-withddraw-money.png)
+![Transfer Confirmation](images/21-withdraw-done.png)
 
-![Testing the Deployed Application](images/16-test-website.png)
+---
 
+## DNS Configuration and Verification
+
+A custom domain was configured using Hostinger to map the application's external load balancer address. Below are the steps and verification results:
+
+![Adding DNS Record](images/22-add-dns-record-CNAME.png)
+![Hostinger DNS Management](images/23-hostinger.png)
+![DNS Propagation Check](images/24-DNS-CHECKED.png)
+
+---
+
+## Terraform Destroy
+
+After successfully testing the deployment, the infrastructure was cleaned up using `terraform destroy` to ensure resources were removed and no unnecessary costs were incurred.
+
+![Terraform Destroy Execution](images/27-terraform-destory.png)
