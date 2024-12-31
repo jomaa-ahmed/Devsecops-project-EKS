@@ -81,7 +81,15 @@ A Kubernetes Service Account was created to enable secure communication between 
 
 Roles and Role Bindings were defined to provide fine-grained access control to Kubernetes resources. These configurations ensure that the CI/CD pipeline has the necessary permissions to manage deployments.
 
-![Creating Roles and Role Bindings](images/12-create-role-and-role-binding.png)
+---
+
+## Creating and Describing Kubernetes Token
+
+A new Kubernetes token was created and its details were described using the `kubectl describe secret` command. This token will be used by Jenkins for cluster access.
+
+![Creating Kubernetes Token](images/13-create-a-token.png)
+
+![Describing Kubernetes Token](images/14-describe-token.png)
 
 ---
 
@@ -93,10 +101,5 @@ A Kubernetes token was generated and configured in Jenkins. This token allows Je
 
 ---
 
-## Creating and Describing Kubernetes Token
 
-A new Kubernetes token was created and its details were described using the `kubectl describe secret` command. This token will be used by Jenkins for cluster access.
 
-![Creating Kubernetes Token](images/13-create-a-token.png)
-
-![Describing Kubernetes Token](images/14-describe-token.png)
