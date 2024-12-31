@@ -139,7 +139,7 @@ The deployed application was accessed and tested on the configured EKS cluster. 
 ![Application Login Page](images/16-test-website.png)
 ![Application Dashboard](images/19-deposit-money.png)
 ![Money Transfer](images/20-withddraw-money.png)
-![Transfer Confirmation](images/21-withdraw-done.png)
+
 
 ---
 
