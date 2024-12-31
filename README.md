@@ -60,3 +60,43 @@ Role-Based Access Control (RBAC) was configured to manage secure access to Kuber
 The final infrastructure was provisioned using the `terraform apply` command. The process successfully created the VPC, subnets, and EKS node groups, completing the cluster setup.
 
 ![Terraform Execution for EKS](images/9-terraform-eks.png)
+
+## Verifying EKS Cluster with kubectl
+
+After provisioning, the EKS cluster was verified using the `kubectl get nodes` command. The output confirms that the nodes are up and running, ready for workload deployment.
+
+![Verifying EKS Cluster with kubectl](images/10-kubectl-get-nodes-working.png)
+
+---
+
+## Creating a Service Account
+
+A Kubernetes Service Account was created to enable secure communication between Jenkins and the EKS cluster. This ensures that the CI/CD pipeline can interact with Kubernetes resources securely.
+
+![Creating a Service Account](images/11-create-a-service-account.png)
+
+---
+
+## Creating Roles and Role Bindings
+
+Roles and Role Bindings were defined to provide fine-grained access control to Kubernetes resources. These configurations ensure that the CI/CD pipeline has the necessary permissions to manage deployments.
+
+![Creating Roles and Role Bindings](images/12-create-role-and-role-binding.png)
+
+---
+
+## Configuring Kubernetes Token in Jenkins
+
+A Kubernetes token was generated and configured in Jenkins. This token allows Jenkins to authenticate with the EKS cluster securely, enabling it to execute deployment tasks.
+
+![Configuring Kubernetes Token in Jenkins](images/13-configure-k8-token.png)
+
+---
+
+## Creating and Describing Kubernetes Token
+
+A new Kubernetes token was created and its details were described using the `kubectl describe secret` command. This token will be used by Jenkins for cluster access.
+
+![Creating Kubernetes Token](images/13-create-a-token.png)
+
+![Describing Kubernetes Token](images/14-describe-token.png)
